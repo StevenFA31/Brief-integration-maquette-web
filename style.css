@@ -1,0 +1,203 @@
+/******** ALL *********/
+
+:root {
+  --blackColor: #000000;
+  --backgroundSite: #f1f5f8;
+  --textRed: #cf3034;
+  --whiteBox: #ffffff;
+}
+
+* {
+  font-family: "Nunito sans";
+  margin: 0;
+}
+
+button,
+section#accueil h3,
+.colorBox,
+footer {
+  background-color: var(--textRed);
+}
+
+div.box h2,
+section#impact h3 b {
+  color: var(--textRed);
+}
+
+div.box,
+div.whiteBox {
+  background-color: #ffffff;
+}
+
+body {
+  background-color: #f1f5f8;
+}
+
+div.container {
+  max-width: 1196px;
+  height: auto;
+  margin: auto;
+}
+
+h1 {
+  font-size: 38px;
+}
+/******** Accueil *********/
+
+/* nav {
+  background-color: rgba(0, 0, 0, 0.267);
+  width: auto;
+  height: auto;
+  padding: 20px 0;
+  position: fixed;
+}
+
+ul.hometab {
+  height: 27px;
+  padding: 0;
+  margin: 0 0 0 55%;
+  border: 0;
+  list-style-type: none;
+}
+
+ul.hometab > li {
+  padding-left: 30px;
+  margin: 0;
+  border: 0;
+  text-align: center;
+  display: inline;
+}
+
+ul.hometab > li > a {
+  color: rgb(238, 172, 51);
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+} */
+
+div.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+div.box {
+}
+/******** Impact *********/
+
+div.center {
+  display: flex;
+  justify-content: center;
+}
+
+div.order {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  width: 818px;
+}
+
+section#impact div.whiteBox {
+  margin-right: 20px;
+}
+
+section#impact div.whiteBox,
+section#impact div.colorBox {
+  height: 254px;
+  text-align: center;
+}
+
+section#impact h3 {
+  font-size: 64px;
+  margin: 0;
+  margin-top: 10px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+section#impact p {
+  font-size: 24px;
+}
+
+/******** Témoignages *********/
+
+section#temoignages .whiteBox {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+section#temoignages h4 {
+  font-size: 96px;
+  margin: 0;
+}
+/******** Apprenti *********/
+
+div.imageBox {
+  background-image: url(./asset/img-apprentis.png);
+  background-position: center;
+  height: 375px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+div.imageBox div {
+  background-color: var(--whiteBox);
+  height: 313px;
+  width: 511px;
+}
+
+/******** Soutien *********/
+section#soutien .whiteBox {
+  display: flex;
+  justify-content: center;
+}
+section#soutien img {
+  margin: 30px 15px;
+}
+
+/******** Footer *********/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  color: var(--whiteBox);
+}
+
+.itemBox {
+  display: flex;
+  justify-content: center;
+}
+
+.itemBox img {
+  /* padding: 0 72.5px 60px 0; */
+}
+.itemBox1 {
+  /* padding: 0 0 60px 72.5px; */
+}
+.itemBox2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 46px;
+}
+.itemBox2 img {
+  margin-right: 29px;
+}
+
+.itemBox3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+footer a {
+  color: var(--whiteBox);
+  text-decoration: none;
+}
+
+hr {
+  color: var(--whiteBox);
+  margin: 0 28px;
+  /* height: 28px; */
+}
