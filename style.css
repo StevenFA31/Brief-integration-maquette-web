@@ -13,14 +13,14 @@
 }
 
 button,
-section#accueil h3,
+section.accueil h3,
 .colorBox,
 footer {
   background-color: var(--textRed);
 }
 
 div.box h2,
-section#impact h3 b {
+section.impact h3 b {
   color: var(--textRed);
 }
 
@@ -41,46 +41,83 @@ div.container {
 
 h1 {
   font-size: 38px;
+  font-weight: 500;
+  margin-bottom: 50px;
 }
+
+section {
+  margin-bottom: 100px;
+}
+
 /******** Accueil *********/
+/*** NAV ***/
 
-/* nav {
-  background-color: rgba(0, 0, 0, 0.267);
+nav img {
+  height: 58px;
   width: auto;
-  height: auto;
-  padding: 20px 0;
-  position: fixed;
 }
 
-ul.hometab {
-  height: 27px;
-  padding: 0;
-  margin: 0 0 0 55%;
-  border: 0;
-  list-style-type: none;
-}
-
-ul.hometab > li {
-  padding-left: 30px;
-  margin: 0;
-  border: 0;
+nav {
+  height: 83px;
+  width: auto;
   text-align: center;
-  display: inline;
+  display: flex;
+  justify-content: space-between;
+  margin: 19px 0 45px 0;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+nav ul li {
+  margin-left: 57px;
 }
 
-ul.hometab > li > a {
-  color: rgb(238, 172, 51);
+nav ul li a {
   text-decoration: none;
-  font-size: 1.25rem;
-  font-weight: bold;
-} */
+  color: var(--blackColor);
+  font-size: 18px;
+}
+/** NAV ***/
 
 div.box {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 45px 0 45px 60px;
 }
 
-div.box {
+div.box h2 {
+  margin-top: 49px;
+  font-size: 38px;
+}
+
+div.box i {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+div.box05 {
+  margin-top: 49px;
+}
+
+div.box05 button {
+  font-size: 18px;
+  padding: 14px 32px 13px 32px;
+  border-radius: 6px;
+}
+
+button#a {
+  color: var(--whiteBox);
+  border: 1px solid var(--textRed);
+  margin-right: 19px;
+}
+button#b {
+  color: var(--textRed);
+  background-color: transparent;
+  border: 1px solid var(--textRed);
 }
 /******** Impact *********/
 
@@ -99,39 +136,140 @@ div.order {
   width: 818px;
 }
 
-section#impact div.whiteBox {
-  margin-right: 20px;
+div.flecheBox {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 7px 10px 0;
 }
 
-section#impact div.whiteBox,
-section#impact div.colorBox {
+#cr {
+  padding-right: 15px;
+}
+
+.flecheBox2 {
+  padding-left: 19px;
+  padding-top: 31px;
+}
+
+#flecheBlanche {
+  filter: invert(1);
+}
+section.impact div.whiteBox {
+  margin-right: 10px;
+}
+
+section.impact div.whiteBox,
+section.impact div.colorBox {
   height: 254px;
-  text-align: center;
+  width: 197px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-section#impact h3 {
+section.impact div.colorBox {
+  color: var(--whiteBox);
+}
+
+section.impact h3 {
   font-size: 64px;
   margin: 0;
-  margin-top: 10px;
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
 }
 
-section#impact p {
+section.impact p {
   font-size: 24px;
+  line-height: 113.4%;
 }
 
 /******** Témoignages *********/
 
-section#temoignages .whiteBox {
+section.temoignages .whiteBox {
   display: grid;
   grid-template-columns: 1fr auto;
+  /* padding: 71px 59px 0 59px; */
 }
 
-section#temoignages h4 {
+.avisBox {
+  padding-bottom: 71px;
+  padding: 82px 0 71px 59px;
+}
+
+.boxImage {
+  margin-left: 50px;
+  padding: 71px 59px 0 0;
+}
+
+section.temoignages h4 {
   font-size: 96px;
   margin: 0;
 }
+
+section.temoignages p {
+  font-size: 18px;
+  font-weight: 300;
+  /* text-justify: distribute; */
+}
+
+p#avis {
+  padding-right: 20px;
+}
+
+p#avis2 {
+  margin-top: 22px;
+}
+
+section.temoignages b {
+  font-weight: 600;
+  padding-right: 330px;
+  margin-top: 22px;
+}
+
+.interaction {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding-bottom: 16px;
+}
+
+div.nbrSlide {
+  display: flex;
+  flex-direction: row;
+}
+
+div.nbrSlide p {
+  font-size: 24px;
+}
+
+div.image1 {
+  background-image: url(./asset/VectorL.png);
+  height: 23px;
+  width: 12px;
+  margin: auto 0;
+}
+
+div.image2 {
+  background-image: url(./asset/VectorR.png);
+  height: 23px;
+  width: 12px;
+  margin: auto 0;
+}
+
+p#aa {
+  font-weight: 700;
+}
+
+p#bb {
+  padding: 0 11px;
+}
+
+h4.caractere {
+  line-height: 25px;
+  color: var(--textRed);
+}
+
 /******** Apprenti *********/
 
 div.imageBox {
@@ -148,17 +286,42 @@ div.imageBox div {
   width: 511px;
 }
 
+div.infoImageBox {
+  margin: 40px 35px 33px 40px;
+}
+div.infoImageBox b {
+  font-size: 24px;
+}
+div.infoImageBox p {
+  font-size: 18px;
+}
+div.infoImageBox button {
+  border: 1px solid var(--textRed);
+  border-radius: 6px;
+  height: 52px;
+  width: 193px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--whiteBox);
+}
 /******** Soutien *********/
-section#soutien .whiteBox {
+section.soutien .whiteBox {
   display: flex;
   justify-content: center;
 }
-section#soutien img {
+section.soutien img {
   margin: 30px 15px;
+}
+#GroupRed {
+  height: 47px;
+  width: auto;
+  margin: 0;
 }
 
 .iconeBox {
-  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /******** Footer *********/
@@ -209,15 +372,19 @@ footer {
   justify-content: center;
   margin-bottom: 15px;
 }
-
+/* 
 .itemBox3 hr {
   color: var(--whiteBox);
   margin: 0 28px;
   height: 28px;
-  /* border: 2px solid #ffffff; */
-  /* height: 28px; */
-}
+  border: 2px solid #ffffff;
+  height: 28px;
+ }  */
 
+.itemBox3 p {
+  border-right: 2px solid var(--whiteBox);
+  padding: 0 15px;
+}
 .itemBox3 a {
   margin-top: 5px;
 }

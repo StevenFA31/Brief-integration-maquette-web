@@ -12,22 +12,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <!-- LINK FAMILY FONT  -->
   </head>
   <body>
-    <section id="accueil">
+    <section class="accueil">
       <div class="container">
         <nav>
+          <img
+            src="./asset/logo-simplon-1.png"
+            alt="Logo de simplon"
+            class="iconeSimplon"
+          />
           <ul class="hometab">
-            <img
-              src="./asset/logo-simplon-1.png"
-              alt="Logo de simplon"
-              class="iconeSimplon"
-            />
-
             <li><a href="#...">Entrepise</a></li>
             <li><a href="#...">Réseaux</a></li>
             <li><a href="#...">A propos</a></li>
@@ -48,8 +47,9 @@
                 numérique en France et à l’étranger</i
               >
             </p>
-            <div>
-              <button>Nos formations</button> <button>Une questions ?</button>
+            <div class="box05">
+              <button id="a"><strong>Nos formations</strong></button>
+              <button id="b"><strong>Une questions ?</strong></button>
             </div>
           </div>
           <div>
@@ -59,101 +59,141 @@
       </div>
     </section>
 
-    <section id="impact">
+    <section class="impact">
       <div class="container">
         <h1><b>Notre impact</b></h1>
         <div class="center">
           <div class="order">
             <div class="whiteBox">
-              <h3><b>8624</b></h3>
-              <p>Simploniens dans le monde</p>
-              <img src="..." alt="Icone d'une fléche vers la droite" />
+              <div class="flecheBox2">
+                <h3><b>8624</b></h3>
+                <p>Simploniens dans le monde</p>
+              </div>
+              <div class="flecheBox">
+                <img
+                  src="./asset/Group.png"
+                  alt="Icone d'une fléche vers la droite"
+                />
+              </div>
             </div>
             <div class="whiteBox">
-              <h3><b>99</b></h3>
-              <p>Fabriques dans le monde</p>
-              <img src="..." alt="Icone d'une fléche vers la droite" />
+              <div class="flecheBox2" id="cr">
+                <h3><b>99</b></h3>
+                <p>Fabriques dans le monde</p>
+              </div>
+              <div class="flecheBox">
+                <img
+                  src="./asset/Group.png"
+                  alt="Icone d'une fléche vers la droite"
+                />
+              </div>
             </div>
             <div class="whiteBox">
-              <h3><b>70%</b></h3>
-              <p>De sorties positives après la formation</p>
-              <img src="..." alt="Icone d'une fléche vers la droite" />
+              <div class="flecheBox2">
+                <h3><b>70 %</b></h3>
+                <p>De sorties positives après la formation</p>
+              </div>
+              <div class="flecheBox">
+                <img
+                  src="./asset/Group.png"
+                  alt="Icone d'une fléche vers la droite"
+                />
+              </div>
             </div>
             <div class="colorBox">
-              <p><b>Notre bilan d'impact social</b></p>
-              <img src="..." alt="Icone d'une fléche vers la droite" />
+              <div class="vide"></div>
+              <div class="flecheBox2" id="cr">
+                <p><b>Notre bilan d'impact social</b></p>
+              </div>
+              <div class="flecheBox">
+                <img
+                  src="./asset/Group.png"
+                  alt="Icone d'une fléche vers la droite"
+                  id="flecheBlanche"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="temoignages">
+    <section class="temoignages">
       <div class="container">
         <h1><b>Témoignages</b></h1>
         <div class="whiteBox">
-          <div>
-            <h4>“</h4>
-            <p>
+          <div class="avisBox">
+            <h4 class="caractere">“</h4>
+            <p id="avis">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               nisl lacus adipiscing non, ut. Vestibulum tellus tempus ipsum
               risus. Urna turpis sollicitudin sagittis a diam amet, ornare
               porttitor porta. Et integer blandit vestibulum quis pharetra nunc.
+              <br />
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               nisl lacus adipiscing non, ut. Vestibulum tellus tempus ipsum
               risus. Urna turpis sollicitudin sagittis a diam amet, ornare
               porttitor porta. Et integer blandit vestibulum quis pharetra nunc.
+              <br />
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               nisl lacus adipiscing non, ut. Vestibulum tellus tempus ipsum
               risus. Urna turpis sollicitudin sagittis a diam amet, ornare
               porttitor porta. Et integer blandit vestibulum quis pharetra nunc.
+              <br />
             </p>
-            <p>
+            <p id="avis2">
               <b
                 >Jonathan, Simplonien en alternance à la société génrale après
                 une formation développeur Web Java</b
               >
             </p>
           </div>
-          <div>
+          <div class="boxImage">
             <img
               src="./asset/temoignages-1-img.png"
               alt="Profil de professionnel"
             />
-            <div>
-              <img src="" alt="flèche direction gauche" />
-              <p>01</p>
-              <p>02</p>
-              <p>03</p>
-              <img src="" alt="flèche direction droite" />
+            <div class="interaction">
+              <div class="image1"></div>
+              <!-- <img src="./asset/VectorL.png" alt="flèche direction gauche" /> -->
+              <div class="nbrSlide">
+                <p id="aa">01</p>
+                <p id="bb">02</p>
+                <p id="cc">03</p>
+              </div>
+              <div class="image2"></div>
+              <!-- <img src="./asset/VectorR.png" alt="flèche direction droite" /> -->
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="apprenti">
+    <section class="apprenti">
       <div class="container">
         <h1><b>Apprentis Simplon</b></h1>
         <div class="imageBox">
-          <div>
-            <h3>
-              <b
-                >Les CFA Simplon proposent désormais des formations en
-                apprentissage pour les jeunes</b
-              >
-            </h3>
-            <p>
-              Simplon propose depuis janvier toutes ses formations certifiantes
-              au travers de titres professionnels en apprentissage
-            </p>
-            <button>En savoir plus</button>
+          <div class="containerBox">
+            <div class="infoImageBox">
+              <h3>
+                <b
+                  >Les CFA Simplon proposent désormais des formations en
+                  apprentissage pour les jeunes</b
+                >
+              </h3>
+              <p>
+                Simplon propose depuis janvier toutes ses formations
+                certifiantes au travers de titres professionnels en
+                apprentissage
+              </p>
+              <button>En savoir plus</button>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="soutien">
+    <section class="soutien">
       <div class="container">
         <h1><b>Ils nous soutiennent</b></h1>
         <div class="whiteBox">
@@ -164,10 +204,19 @@
           <img src="./asset/logo-idf.png" alt="" />
         </div>
         <div class="iconeBox">
-          <img src="" alt="icone directive gauche" />
-          <img src="" alt="icone pause" />
-          <img src="" alt="icone directive droit " />
-          <img src="" alt="icone fléche vers la droite " />
+          <div></div>
+          <div>
+            <img src="./asset/VectorL.png" alt="icone directive gauche" />
+            <img src="./asset/icon-stop.png" alt="icone pause" />
+            <img src="./asset/VectorR.png" alt="icone directive droit " />
+          </div>
+          <div>
+            <img
+              src="./asset/GroupRed.png"
+              alt="icone fléche vers la droite "
+              id="GroupRed"
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -193,19 +242,18 @@
       </div>
       <div class="itemBox3">
         <p><a href="">Nos actualités</a></p>
-        <hr />
         <p><a href="">Rejoindre nos équipes</a></p>
-        <hr />
+
         <p><a href="">Notre agence numériques</a></p>
-        <hr />
+
         <p><a href="">Presse</a></p>
-        <hr />
+
         <p><a href="">Contact</a></p>
-        <hr />
+
         <p><a href="">Plan du site</a></p>
-        <hr />
+
         <p><a href="">Mention légales</a></p>
-        <hr />
+
         <p><a href="">Accessibilité</a></p>
       </div>
     </footer>
