@@ -173,23 +173,22 @@
       <div class="container">
         <h1><b>Apprentis Simplon</b></h1>
         <div class="imageBox">
-          <div class="containerBox">
-            <div class="infoImageBox">
-              <h3>
-                <b
-                  >Les CFA Simplon proposent désormais des formations en
-                  apprentissage pour les jeunes</b
-                >
-              </h3>
-              <p>
-                Simplon propose depuis janvier toutes ses formations
-                certifiantes au travers de titres professionnels en
-                apprentissage
-              </p>
-              <button>En savoir plus</button>
-            </div>
+          <!-- <div class="containerBox"> -->
+          <div class="infoImageBox" id="infoImageBox">
+            <h3>
+              <b
+                >Les CFA Simplon proposent désormais des formations en
+                apprentissage pour les jeunes</b
+              >
+            </h3>
+            <p>
+              Simplon propose depuis janvier toutes ses formations certifiantes
+              au travers de titres professionnels en apprentissage
+            </p>
+            <button>En savoir plus</button>
           </div>
         </div>
+        <!-- </div> -->
       </div>
     </section>
 
@@ -228,16 +227,25 @@
         </div>
         <div class="itemBox1">
           <h3><strong>Restez informés</strong></h3>
-          <p><strong>Insrivez-vous a la newsletter</strong></p>
-          <input type="email" placeholder="Entrez votre mail" size="32px" />
-          <label for="email"></label>
+          <p>Insrivez-vous a la newsletter</p>
+          <div class="emailBox">
+            <input
+              class="icon"
+              type="email"
+              placeholder="Entrez votre mail"
+              size="32px"
+              style="border: none"
+            />
+            <label for="email"></label>
+            <img src="./asset/icon-mail.png" alt="" />
+          </div>
         </div>
       </div>
       <div class="itemBox2">
         <img src="./asset/fb.png" alt="Logo Facebook" />
-        <img src="./asset/insta.png" alt="Logo Instagram" />
-        <img src="./asset/twitter.png" alt="Logo Twitter" />
-        <img src="./asset/youtube.png" alt="Logo Youtube" />
+        <img id="leftImg" src="./asset/insta.png" alt="Logo Instagram" />
+        <img id="middleImg" src="./asset/twitter.png" alt="Logo Twitter" />
+        <img id="rightImg" src="./asset/youtube.png" alt="Logo Youtube" />
         <img src="./asset/linkedin.png" alt="Logo Linkedin" />
       </div>
       <div class="itemBox3">

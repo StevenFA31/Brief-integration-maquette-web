@@ -1,4 +1,4 @@
-/******** ALL *********/
+/************************ ALL *************************/
 
 :root {
   --blackColor: #000000;
@@ -49,8 +49,8 @@ section {
   margin-bottom: 100px;
 }
 
-/******** Accueil *********/
-/*** NAV ***/
+/************************ Accueil *************************/
+/*********** NAV ***********/
 
 nav img {
   height: 58px;
@@ -79,8 +79,9 @@ nav ul li a {
   text-decoration: none;
   color: var(--blackColor);
   font-size: 18px;
+  font-weight: 600;
 }
-/** NAV ***/
+/*********** NAV ***********/
 
 div.box {
   display: grid;
@@ -91,6 +92,8 @@ div.box {
 div.box h2 {
   margin-top: 49px;
   font-size: 38px;
+  line-height: 43.09px ;
+  padding-bottom: 12px;
 }
 
 div.box i {
@@ -111,7 +114,7 @@ div.box05 button {
 
 button#a {
   color: var(--whiteBox);
-  border: 1px solid var(--textRed);
+  border: 1.5px solid var(--textRed);
   margin-right: 19px;
 }
 button#b {
@@ -119,7 +122,7 @@ button#b {
   background-color: transparent;
   border: 1px solid var(--textRed);
 }
-/******** Impact *********/
+/*********** Impact ***********/
 
 div.center {
   display: flex;
@@ -184,7 +187,7 @@ section.impact p {
   line-height: 113.4%;
 }
 
-/******** Témoignages *********/
+/************************ Témoignages *************************/
 
 section.temoignages .whiteBox {
   display: grid;
@@ -270,7 +273,7 @@ h4.caractere {
   color: var(--textRed);
 }
 
-/******** Apprenti *********/
+/************************ Apprenti *************************/
 
 div.imageBox {
   background-image: url(./asset/img-apprentis.png);
@@ -286,15 +289,28 @@ div.imageBox div {
   width: 511px;
 }
 
-div.infoImageBox {
-  margin: 40px 35px 33px 40px;
+div.infoImageBox #infoImageBox {
+  /* margin: 40px 35px 33px 40px; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  padding: 40px;
+  height: 323px;
+  height: 511px;
 }
-div.infoImageBox b {
+
+div.infoImageBox h3 {
+  padding: 40px 35px 25px 40px;
+  line-height: 27.22px;
   font-size: 24px;
 }
+
 div.infoImageBox p {
   font-size: 18px;
+  line-height: 20.41px;
+  padding: 0px 35px 32px 40px;
 }
+
 div.infoImageBox button {
   border: 1px solid var(--textRed);
   border-radius: 6px;
@@ -303,8 +319,10 @@ div.infoImageBox button {
   font-size: 18px;
   font-weight: 700;
   color: var(--whiteBox);
+  margin: 0 0px 20px 40px;
 }
-/******** Soutien *********/
+
+/************************ Soutien *************************/
 section.soutien .whiteBox {
   display: flex;
   justify-content: center;
@@ -324,7 +342,7 @@ section.soutien img {
   justify-content: space-between;
 }
 
-/******** Footer *********/
+/************************ Footer *************************/
 
 footer {
   display: flex;
@@ -342,6 +360,7 @@ footer {
 
 .itemBox1 {
   margin: 50px 0 60px 72.5px;
+  /* width: 315px; */
 }
 
 .itemBox1 h3 {
@@ -350,6 +369,8 @@ footer {
 
 .itemBox1 p {
   font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 .itemBox1 input {
   background-color: transparent;
@@ -358,12 +379,36 @@ footer {
   font-size: 16px;
   color: #ffffff;
 }
+
+.itemBox1 input::placeholder {
+color: var(--whiteBox);
+font-size: 16px;
+font-weight: 300;
+}
+.emailBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid var(--backgroundSite) "
+}
+
+
+
 .itemBox2 {
   display: flex;
   justify-content: center;
   margin-bottom: 46px;
 }
-.itemBox2 img {
+
+#middleImg {
+  margin: 0 29px;
+}
+
+#leftImg {
+  margin-left: 29px;
+}
+
+#rightImg {
   margin-right: 29px;
 }
 
@@ -394,3 +439,9 @@ footer a {
   text-decoration: none;
   font-size: 16px;
 }
+
+/* .icon {
+  background: url(./asset/icon-mail.png) no-repeat right;
+  background-size: 20px;
+  padding: 0;
+} */
