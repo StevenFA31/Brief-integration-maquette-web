@@ -1,5 +1,5 @@
 /************************ ALL *************************/
-@import url(./script.js);
+
 :root {
   --blackColor: #000000;
   --backgroundSite: #f1f5f8;
@@ -49,7 +49,27 @@ section {
   margin-bottom: 100px;
 }
 @media screen and (max-width:800px) {
+  h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 16px;
+    font-weight: 500;
+  }
   
+h2 {
+
+}
+
+h3 {
+
+}
+
+
+
+  section {
+    margin-bottom: 50px;
+  }
+
 }
 /************************ Accueil *************************/
 /*********** NAV ***********/
@@ -88,7 +108,8 @@ section {
      position: relative;
 }
  nav ul li a,nav ul li a:visited {
-     display: block;
+     display: flex;
+     justify-content: center;
      padding: 0 20px;
      line-height: 55px;
      color: var(--blackColor);
@@ -138,6 +159,7 @@ section {
      .nav-mobile {
          display: block;
     }
+  
      nav {
          width: 100%;
          padding: 55px 0 15px;
@@ -158,12 +180,12 @@ section {
     }
      .navbar-dropdown {
          position: static;
-}
+}}
  @media screen and (min-width:800px) {
      .nav-list {
          display: block !important;
     }
-}
+ }
  #navbar-toggle {
      position: absolute;
      left: 18px;
@@ -200,7 +222,7 @@ section {
  #navbar-toggle.active span:after {
      transform: rotate(-45deg);
 }
- }
+ 
 
 
 /* nav img {
@@ -273,7 +295,24 @@ button#b {
   background-color: transparent;
   border: 1px solid var(--textRed);
 }
-/*********** Impact ***********/
+
+@media screen and (max-width:800px) {
+/* div.box div img, */
+div.box06 {
+  display: none;
+}
+ div.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ }
+
+ div.box h2 {
+  font-size: 24px;
+  line-height: 27.22px;
+ }
+}
+/************************ Impact ************************/
 
 div.center {
   display: flex;
@@ -339,7 +378,66 @@ section.impact p {
 }
 
 @media screen and (max-width:800px) {
+div.order {
   
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+  width: auto;
+}
+
+div.center {
+  display: flex;
+  justify-content: center;
+}
+
+
+div.flecheBox {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 7px 10px 0;
+}
+
+#cr {
+  padding-right: 15px;
+}
+
+.flecheBox2 {
+  padding-left: 19px;
+  padding-top: 31px;
+}
+
+#flecheBlanche {
+  filter: invert(1);
+}
+section.impact div.whiteBox {
+  margin-right: 10px;
+}
+
+section.impact div.whiteBox,
+section.impact div.colorBox {
+  height: 254px;
+  width: 197px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section.impact div.colorBox {
+  color: var(--whiteBox);
+}
+
+section.impact h3 {
+  font-size: 64px;
+  margin: 0;
+  font-weight: 400;
+  font-style: normal;
+}
+
+section.impact p {
+  font-size: 24px;
+  line-height: 113.4%;
+}
 }
 
 /************************ Témoignages *************************/
@@ -428,6 +526,11 @@ h4.caractere {
   color: var(--textRed);
 }
 
+@media screen and (max-width:800px) {
+  div.boxImage {
+    display: none;
+  }
+}
 /************************ Apprenti *************************/
 
 div.imageBox {
@@ -497,6 +600,64 @@ section.soutien img {
   justify-content: space-between;
 }
 
+@media screen and (max-width:800px) {
+  
+
+img#imageFive {
+    width: 53.9px;
+    height: 48.08px;
+  }
+img#imageFour  {
+    width: 48.08px;
+    height: 48.08px;
+  }
+
+img#imageThree  {
+    width: 49.17px;
+    height: 48.08px;
+  }
+
+img#imageTwo {
+    width: 62.12px;
+    height: 48.08px;
+  }
+
+img#imageOne{
+    width: 48.08px;
+    height: 48.08px;
+  }
+  
+section.soutien img {
+    margin: 19px 17px 20px 17px;
+  }
+
+div.iconeDirectional img {
+    margin: 30px 15px;
+  }
+
+div.whiteBox {
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+  
+}
+div.iconeBox {
+    background-color: var(--whiteBox);
+  }
+
+  div.groupeRed {
+display: flex;
+justify-content: end;
+flex-direction: column;
+  }
+
+  
+
+}
 /************************ Footer *************************/
 
 footer {
