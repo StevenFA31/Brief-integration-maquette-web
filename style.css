@@ -56,16 +56,6 @@ section {
     font-weight: 500;
   }
   
-h2 {
-
-}
-
-h3 {
-
-}
-
-
-
   section {
     margin-bottom: 50px;
   }
@@ -125,7 +115,7 @@ h3 {
      color: #ffffff;
 } */
  .navbar-dropdown li a{
-     background: #2581DC;
+     background: #f1f5f8;
 }
  nav ul li a:not(:only-child):after, nav ul li a:visited:not(:only-child):after {
      padding-left: 4px;
@@ -173,7 +163,7 @@ h3 {
      nav ul li a {
          padding: 15px;
          line-height: 20px;
-         background: #262626;
+         background: var(--backgroundSite);
     }
      nav ul li ul li a {
          padding-left: 30px;
@@ -305,12 +295,30 @@ div.box06 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 31px 16px;
+ }
+
+ div.box div h2 {
+  margin-top: 20px;
+ }
+
+ div.box05 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+ }
+
+ button#a {
+  margin-right: 0;
+  margin-bottom: 15px;
  }
 
  div.box h2 {
   font-size: 24px;
   line-height: 27.22px;
  }
+
+
 }
 /************************ Impact ************************/
 
@@ -366,7 +374,7 @@ section.impact div.colorBox {
 }
 
 section.impact h3 {
-  font-size: 64px;
+  font-size: 36px;
   margin: 0;
   font-weight: 400;
   font-style: normal;
